@@ -1,0 +1,355 @@
+/* Font of the webpage */
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn&display=swap');
+
+/* Universal Foramating */
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: 'Vollkorn', serif;
+}
+/* Heading Text styling */
+h1{
+    font-size:2vw;
+}
+
+h2{
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    font-weight: bolder;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration:underline;
+}
+
+h4{
+    font-size: 1rem;
+    color: white;
+    text-decoration: underline;
+    letter-spacing: 0.05rem;
+    font-weight: lighter;
+}
+
+/*SECTION:1  */
+/* Header Section styling */
+#main-content{
+background-image: url(./background_image.png);
+width: 100%;
+height: 70vh;
+background-size: cover;
+}
+
+/* Navigation bar styling */
+#navbar{
+    display: flex;
+    flex-direction: row;
+    color: white;
+}
+
+#logo{
+    height: 18vh;
+}
+
+
+/* Description section */
+#description{
+    font-size: 1.5em;
+    max-width : 50%;
+    height: 35vh;
+    margin-left: 5vh;
+    background-color: hsl(0, 0%, 100%, 0.4);
+    color: black;
+    text-align: center;
+    padding: 7vh 2vh 7vh 2vh;
+    border-radius: 4vh;
+    font-weight: bold;
+    letter-spacing: 0.03vh;
+}
+
+/* User input feilds styling*/
+#input-box{
+    height: 6vh;
+    margin-top: 3vh;
+    margin-left: 15vh;
+    width: 35%;
+    border-radius: 15vh;
+    text-align: center;
+    font-size: medium;
+    font-weight: bolder;
+
+}
+/* Search button styling */
+button{
+    height: 6vh;
+    width: 12vh;
+    border-radius: 5vh;
+    font-weight: bold;
+    font-size: 1rem;
+    box-shadow: 0 0.3vh 0 0.3vh rgba(0, 0, 0, 0.6);
+    color: white;
+    background-color: darkcyan;
+}
+ button:hover{
+    background-color: white;
+    color: darkcyan;
+    
+}
+/* SECTION :2 */
+/* Random image division styling */
+#random-section{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#flash-card{
+    height: 37vh;
+    width: 100%;
+    box-shadow: 0 0 1vh 1vh black;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+}
+
+#image-card{
+    background-color: darkcyan;
+    box-shadow: 4vh 4vh 10vh black;
+    margin-top: 2vh;
+    height: 50vh;
+    width: 35%;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+#test{
+    width: 90%;
+    height: 70%;
+}
+
+/* Ingredient popup styling */
+#popup{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+#ingredientcard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40vw;
+    height: 50vh;
+    background-color: aqua;
+    flex-direction: column;
+}
+
+#cross{
+    height: 5vh;
+    display: flex;
+    align-self: flex-end;        
+}
+
+#ingredientcard h2{
+    text-decoration: none;
+    font-size: 2vw;
+}
+
+/* SECTION: 3 */
+/* Searched items divison styling */
+#display-searched{
+    width: 100%;
+    background-color: white;
+}
+
+#searched-items{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-evenly;
+}
+
+.searched-itemcard{
+    background-color: darkcyan;
+    height: 35vh;
+    width: 90%;
+    text-align: center;
+    box-shadow: 0 0 1vh 1vh rgba(0, 0, 0, 0.4);
+    margin-bottom: 5vh;
+    margin-top: 1vh;
+}
+
+.searched-itemcard h4:hover{
+    color: black;
+
+}
+
+.test1{
+    width: 100%;
+    height: 28vh;
+}
+
+/* Footer section styling */
+#footer{
+    background-color: darkcyan;
+    width: 100%;
+    display: flex;
+    align-items:baseline;
+    height: 8vh;
+    margin-top: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* RESPONSIVE STYLING OF THE DOCUMENT */
+
+@media only screen and (max-width:567px){
+    #body{
+        overflow: hidden;
+    }
+    /* Fonts Audjustments */
+    h1{
+        font-size: 5vw;
+    }
+
+    h4{
+        color: white;
+        text-decoration: underline;
+        font-weight: lighter;
+        letter-spacing: 0.02vw;
+    }
+
+    /* SECTION :1 */
+    #main-content{
+        height: 30vh;
+    }
+
+    #logo{
+    height: 5vh;
+    padding: 1vh;
+    }
+
+    #description{
+        font-size: 2.5vw;
+        height: 8vh;
+        background-color: hsl(0, 0%, 100%, 0.4);
+        color: black; 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    } 
+
+    #user-input{
+        padding: 5vw;
+    }
+
+    #input-box{
+        height: 2vh;
+        margin-top: 0;
+        margin-left: 0;
+        width: 35vw;
+        border-radius: 2vh;
+        text-align: center;
+        font-size: 2.2vw;
+        font-weight: bolder;
+        margin-left: 10vw; 
+    }
+
+    button{
+        height: 2vh;
+        width: 10vw;
+        border-radius: 2vh;
+        font-weight: bold;
+        font-size: 2.2vw;
+        box-shadow: 0 0.3vh 0 0.3vh rgb(0, 0, 0,0.6);
+        color: white;
+        background-color: darkcyan;
+    }
+    
+    /* SECTION :2 */
+    #random-section{
+        background-color: white;
+        justify-content: center;
+        height: 50vh;
+    }
+
+    #flash-card{
+        border-radius: 2vh;
+    }
+
+    #image-card{
+        background-color: darkcyan;
+        padding: 2vh;
+        box-shadow: 1vh 1vh 2vh  rgb(36, 36, 36);
+        height: 38vh;
+        width: 70vw; 
+        border-radius: 2vw;
+        align-items: center;
+        font-size: 4vw;
+    }
+
+    #test{
+        width: 55vw;
+    }
+
+    #ingredientcard{
+        box-shadow: 4vh 4vh 10vh black;
+        width: 80vw;
+        height: 80vh;
+        position :absolute;
+        background-color: aqua;
+        flex-direction: column;
+    }
+    #ingredientcard h2{
+        text-decoration: none;
+        font-size: 5vw;
+    }
+    #cross{
+        width: 10vw  ;
+        display: flex;
+        align-self: flex-end;        
+    }
+
+    /* SECTION :3 */
+    #searched-items{
+        display: grid;
+        grid-template-columns: 70% ;
+        justify-content: space-evenly;
+    }
+    .searched-itemcard{
+        box-shadow: 0 0vh 0 0.3vh rgba(65, 65, 65, 0.6);
+    }
+
+    .searched-itemcard h4{
+        text-decoration: none;
+        font-style: 0.5vw;
+    }
+
+    .searched-itemcard h4:hover{
+        color: darkcyan;
+    }
+
+    /* Footer */
+    #footer{
+        margin-top: 10vh;
+        height: 7vh;
+    }
+
+}
+

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mealzy</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Section 1: Header Section -->
+
+    <div id="main-content">
+        <!-- Navigation Bar -->
+        <div id="navbar">
+            <img id="logo" src="logo.png" alt="">
+        </div>
+        <!-- Description Section -->
+        <div id="description"><p>Mealzy is the ultimate destination for all your recipe searches. So Unleash your inner foodie, bring out Chef inside you and get ready to explore magnificant flavours.We understand "Cooking is love made invisible".</p></div>
+        <!-- Search Category Section -->
+        <!-- User Input section -->
+        <div id="user-input">
+            <input id="input-box" type="text" placeholder="Search a Recipe">
+            <a href="#recipesection">
+                <span > <button onclick="searchCategory()">Search</button></span>
+            </a>
+        </div>
+    </div>
+    
+    <!-- Section 2: Random Dish Section -->
+
+    <div id="random-section" >
+        <div id="flash-card">
+            <div id="image-card">
+                <h1>Random-meal-of-the-Day</h1>
+                <h4 onclick="showIngredient()">Click to view ingredients</h4>
+            </div>
+        </div>
+    </div>
+    <!-- Ingredients Popup -->
+    <div id="popup">
+        <div id="ingredientcard">
+            <img onclick="hideIngredients()" id="cross" src="./Cross icon.png" alt="">
+            <h2 ></h2>
+            <h3></h3>
+            <h3></h3>
+            <br>
+            Ingredients :
+            <ul>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Section 3:Searched Category Section -->
+
+    <div id="display-searched">
+        <a id="recipesection"><h2 id="search-title"></h2>  </a>  
+        <div id="searched-items"> 
+            <!-- <div class="searched-itemcard">
+                <img class="test1 " src="" alt="">
+                <h4></h4> -->
+
+            </div>  
+        </div>
+    </div>
+
+    <!-- Footer section -->
+    <h4>M</h4>
+    <div id="footer">
+        <h3>Made with ♥ by Priyanshi Rana</h3>
+    </div>
+    <!-- For axioms utility -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
